@@ -1,11 +1,9 @@
-#include <iostream>
-#include <AstaStar.h>
+#include <AstaStar/AstaStar.hpp>
 
-#include "AstaStarEditor.h"
-
-int main(int argc, char** argv)
+class AstaStarEditor : public AstaStar::Application
 {
-    AstaStar::test();
-    std::cout << "Hello AstaStarEditor!" << std::endl;
-    return 0;
-}
+public:
+private:
+};
+
+AS_APP(AstaStarEditor);

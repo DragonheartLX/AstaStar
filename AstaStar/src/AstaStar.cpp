@@ -1,11 +1,6 @@
-#include "AstaStar.h"
-
-#include <iostream>
+#include "AstaStar/AstaStar.hpp"
 
 namespace AstaStar
 {
-    void test()
-    {
-        std::cout << "Hello AstaStar!" << std::endl;
-    }
+    
 } // namespace AstaStar

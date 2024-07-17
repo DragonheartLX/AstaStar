@@ -7,4 +7,7 @@ project(AstaStarLib)
 
 add_library(AstaStarLib ${ASTASTAR_Src})
 
-target_include_directories(AstaStarLib PUBLIC AstaStar)
+target_include_directories(AstaStarLib PUBLIC .)
+
+find_package(spdlog CONFIG REQUIRED)
+    target_link_libraries(AstaStarLib PUBLIC spdlog::spdlog)

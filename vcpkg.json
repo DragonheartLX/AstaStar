@@ -4,28 +4,39 @@
     "dependencies": [
       {
         "name": "spdlog",
-        "version>=": "1.12.0"
+        "version>=": "1.14.1"
       },
       {
         "name": "glm",
-        "version>=": "0.9.9.8#2"
+        "version>=": "1.0.1#2"
       },
       {
         "name": "glfw3",
-        "version>=": "3.3.8#2"
+        "version>=": "3.4"
       },
       {
         "name": "stb",
         "version>=": "2023-04-11#1"
       },
       {
+        "name": "tomlplusplus",
+        "version>=": "3.4.0"
+      },
+      {
         "name": "entt",
-        "version>=": "3.12.2"
+        "version>=": "3.13.2"
       },
       {
         "name": "box2d",
         "version>=": "2.4.1#3"
       }
     ],
-    "builtin-baseline": "ce46ba8777d8f899d8dc11afefb8eca39293df39"
+    "builtin-baseline": "ce46ba8777d8f899d8dc11afefb8eca39293df39",
+    "vcpkg-configuration": 
+    {
+      "overlay-triplets": 
+      [
+        "./triplet"
+      ]
+    }
   }

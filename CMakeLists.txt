@@ -15,28 +15,6 @@ message("-- [AstaStar] LIBRARY_OUTPUT_PATH (Static): ${CMAKE_ARCHIVE_OUTPUT_DIRE
 message("-- [AstaStar] LIBRARY_OUTPUT_PATH (Shared): ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}")
 message("-- [AstaStar] CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}")
 
-# MSVC Setting
-if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
-    add_compile_options(
-        "$<$<CONFIG:>:/MT>" #----------------|
-        "$<$<CONFIG:Debug>:/MTd>" #----------|-- Statically link the runtime libraries
-        "$<$<CONFIG:Release>:/MT>" #---------|
-        "$<$<CONFIG:RelWithDebInfo>:/MT>" #--|
-    )
-endif()
-
-# Clang-cl Setting
-if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-    if(CMAKE_CXX_SIMULATE_ID STREQUAL "MSVC")
-        add_compile_options(
-            "$<$<CONFIG:>:-fms-runtime-lib=static>" #-------------------|
-            "$<$<CONFIG:Debug>:-fms-runtime-lib=static_dbg>" #----------|-- Statically link the runtime libraries
-            "$<$<CONFIG:Release>:-fms-runtime-lib=static>" #------------|
-            "$<$<CONFIG:RelWithDebInfo>:-fms-runtime-lib=static>" #-----|
-        )
-    endif()
-endif()
-
 message("-- [AstaStar] C Compiler: ${CMAKE_C_COMPILER_ID}")
 message("-- [AstaStar] CXX Compiler: ${CMAKE_CXX_COMPILER_ID}")
 

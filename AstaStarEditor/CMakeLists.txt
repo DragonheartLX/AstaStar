@@ -7,6 +7,6 @@ project(AstaStarEditor)
 
 add_executable(AstaStarEditor ${ASTASTAR_Src})
 
-target_include_directories(AstaStarEditor PRIVATE AstaStarEditor)
+target_include_directories(AstaStarEditor PRIVATE .)
 
 target_link_libraries(AstaStarEditor PRIVATE AstaStarLib)
