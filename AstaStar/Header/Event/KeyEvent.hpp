@@ -1,8 +1,5 @@
 #pragma once
-
 #include "Event.hpp"
-
-#include <sstream>
 
 namespace AstaStar
 {
@@ -53,5 +50,21 @@ namespace AstaStar
 		}
 
 		EVENT_CLASS_TYPE(KeyReleased)
+	};
+
+	class KeyTypeEvent : public KeyEvent
+	{
+	public:
+		KeyTypeEvent(uint32_t keycode):
+			KeyEvent(keycode) {}
+
+		std::string toString() const override
+		{
+			std::stringstream ss;
+			ss << "KeyTypeEvent: " << m_KeyCode;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyTyped)
 	};
 }

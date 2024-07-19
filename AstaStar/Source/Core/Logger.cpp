@@ -1,4 +1,4 @@
-#include "AstaStar/Core/Logger.hpp"
+#include "Core/Logger.hpp"
 
 #include <memory>
 #include <spdlog/logger.h>

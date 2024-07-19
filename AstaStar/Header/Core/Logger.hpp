@@ -1,7 +1,5 @@
 #pragma once
-
-#include <memory>
-#include <spdlog/logger.h>
+#include "pch.hpp"
 
 namespace AstaStar
 {
@@ -16,6 +14,7 @@ namespace AstaStar
     };
 
     #define AS_TRACE(...)			::AstaStar::Logger::getLogger()->trace(__VA_ARGS__)
+    #define AS_DEBUG(...)			::AstaStar::Logger::getLogger()->debug(__VA_ARGS__)
 	#define AS_INFO(...)			::AstaStar::Logger::getLogger()->info(__VA_ARGS__)
 	#define AS_WARN(...)			::AstaStar::Logger::getLogger()->warn(__VA_ARGS__)
 	#define AS_ERROR(...)			::AstaStar::Logger::getLogger()->error(__VA_ARGS__)

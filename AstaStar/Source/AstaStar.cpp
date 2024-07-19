@@ -1,4 +1,4 @@
-#include "AstaStar/AstaStar.hpp"
+#include "AstaStar.hpp"
 
 namespace AstaStar
 {

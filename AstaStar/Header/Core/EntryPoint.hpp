@@ -19,7 +19,7 @@ int main(int argc, char** argv)
     return 0;
 }
 
-#define AS_APP(APP) AstaStar::Application* AstaStar::createApplication()   \
+#define AS_APP(APP) AstaStar::Application* AstaStar::createApplication()    \
 {                                                                           \
 	return new APP();                                                       \
 }

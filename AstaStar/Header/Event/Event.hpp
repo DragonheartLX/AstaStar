@@ -1,7 +1,5 @@
 #pragma once
-
-#include <string>
-#include <functional>
+#include "pch.hpp"
 
 #define BIT(x) (1 << x)
 
@@ -23,7 +21,7 @@ namespace AstaStar
 		None = 0,
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
 		AppTick, AppUpdate, AppRender,
-		KeyPressed, KeyReleased,
+		KeyPressed, KeyReleased, KeyTyped,
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
