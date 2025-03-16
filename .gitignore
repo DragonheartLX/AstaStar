@@ -1,11 +1,5 @@
 # Build
 build/
 
-# Visual Studio
-.vs/
-
-# Visual Studio Code
-.vscode/
-
 # Clangd
 .cache/

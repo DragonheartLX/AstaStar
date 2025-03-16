@@ -1,6 +1,6 @@
-#include "AstaStar.hpp"
+#include "AstaStar.h"
 
-namespace AstaStar
+std::string getVersion()
 {
-    
-} // namespace AstaStar
+    return "0.0.0-dev";
+}

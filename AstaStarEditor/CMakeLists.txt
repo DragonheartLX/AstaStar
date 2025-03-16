@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.28)
-file(GLOB_RECURSE ASTASTAR_Src LIST_DIRECTORIES false 
+file(GLOB_RECURSE ASTASTAR_EDITOR__SRC LIST_DIRECTORIES false 
     Source/*.cpp
-    src/**/*.cpp)
+    Source/**/*.cpp)
 
 project(AstaStarEditor)
 
-add_executable(AstaStarEditor ${ASTASTAR_Src})
+add_executable(AstaStarEditor ${ASTASTAR_EDITOR__SRC})
 
 target_include_directories(AstaStarEditor PRIVATE Header)
 

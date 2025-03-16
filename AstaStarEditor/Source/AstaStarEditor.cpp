@@ -1,9 +1,10 @@
-#include <AstaStar.hpp>
+#include <AstaStar.h>
 
-class AstaStarEditor : public AstaStar::Application
+#include "AstaStarEditor.h"
+
+int main(int argc, char** argv)
 {
-public:
-private:
-};
-
-AS_APP(AstaStarEditor);
+    std::cout << getVersion() << std::endl;
+    std::cout << str << std::endl;
+    return 0;
+}
