@@ -1,10 +1,11 @@
 {
-    "name": "astastar",
-    "version": "0.0.0-dev",
-    "dependencies": [
-        {
-            "name": "bgfx",
-            "version>=": "1.129.8930-495"
-        }
-    ]
+  "name": "astastar",
+  "version": "0.0.0-dev",
+  "dependencies": [
+    {
+      "name": "bgfx",
+      "version>=": "1.129.8866-491#0"
+    }
+  ],
+  "builtin-baseline": "2e6fcc44573d091af0321f99c89b212997a76f1f"
 }

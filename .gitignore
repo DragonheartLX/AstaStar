@@ -1,5 +1,8 @@
 # Build
 build/
 
+# CMake user presets
+CMakeUserPresets.json
+
 # Clangd
 .cache/
