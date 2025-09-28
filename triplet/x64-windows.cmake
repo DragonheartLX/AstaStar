@@ -1,3 +1,9 @@
+# Default settings
 set(VCPKG_TARGET_ARCHITECTURE x64)
 set(VCPKG_CRT_LINKAGE dynamic)
 set(VCPKG_LIBRARY_LINKAGE static)
+
+# Override
+# if(${PORT} MATCHES "XXX")
+#     set(VCPKG_LIBRARY_LINKAGE dynamic)
+# endif( )

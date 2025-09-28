@@ -1,6 +1,6 @@
 #include <AstaStar.h>
 
-#include "AstaStarEditor.h"
+#include "AstaStarHub.h"
 
 int main(int argc, char** argv)
 {

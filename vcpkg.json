@@ -1,5 +1,10 @@
 {
     "name": "astastar",
     "version": "0.0.0-dev",
-    "dependencies": []
+    "dependencies": [
+        {
+            "name": "bgfx",
+            "version>=": "1.129.8930-495"
+        }
+    ]
 }
