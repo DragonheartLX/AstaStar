@@ -8,9 +8,10 @@
             "binaryDir": "${sourceDir}/build",
             "toolchainFile": "/path/to/vcpkg.cmake",
             "cacheVariables": {
-                "CMAKE_C_COMPILER": "clang-cl",
-                "CMAKE_CXX_COMPILER": "clang-cl",
-                "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install"
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/install",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
             }
         },
         {

@@ -13,3 +13,6 @@ target_link_libraries(AstaStarHub PRIVATE AstaStarLib)
 
 find_package(bgfx CONFIG REQUIRED)
     target_link_libraries(AstaStarHub PRIVATE bgfx::bx bgfx::bgfx bgfx::bimg bgfx::bimg_decode)
+
+find_package(glfw3 CONFIG REQUIRED)
+    target_link_libraries(AstaStarHub PRIVATE glfw)
